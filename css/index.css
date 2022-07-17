@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hide{
+  width: 0; height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+body{}
+
+img{
+  max-width: 100%;
+}
+html{
+  font: 16px '나눔고딕', sans-serif;
+  color: #666666;
+}
+
+#wrap{
+  margin: 0 auto;
+}
+
+#header{
+  background-color: #0c2645;
+
+}
+#header a{
+  color: #fff;
+}
+#header>header{
+  padding: 20px 0;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header>h1{
+  width: 150px;
+}
+
+header>nav{
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+header>nav>ul{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+header>nav>ul>li{
+  padding: 10px 5px;
+  font-size: 20px;
+}
+#header>header>nav>ul>li>a{
+  display: block;
+}
+#header>header>nav>ul>li:hover{
+  background-color: #fff;
+}
+#header>header>nav>ul>li:hover>a{
+  color: #000;
+}
+
+header>.sub{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header>.sub>.lang{
+  color: #fff;
+  font-size: 20px;
+}
+header>.sub>.search{}
+header>.sub>.search>input{
+  width: 80%;
+  font-size: 20px;
+  margin-right: 5%;
+  padding: 5px 0;
+  text-indent: 10px;
+}
+header>.sub>.search>span{
+  color: #fff;
+  cursor: pointer;
+}
+
+/* article */
+article{
+  margin: 0 auto;
+}
+
+#box01{
+  width: 1440px;
+  margin: 0 auto 80px;
+  padding: 10px 0;
+}
+
+#box01>ul{
+  display: flex;
+}
+#box01>ul>li{
+  padding: 5px 10px;
+  color: rgb(0, 110, 255);
+}
+#box01>ul>li:last-child{
+  color: #000;
+}
+#box01>h2{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+}
+
+#box02{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter{}
+
+.filter>dl{
+  padding: 10px 0;
+}
+.filter>dl>dt{
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.filter>dl>dd{
+  color: #999;
+  line-height: 30px;
+}
+
+.filter>.itemWork>dd:nth-child(2){
+  color: #000;
+  font-weight: bold;
+}
+.filter>.itemColor>dd:nth-child(4){
+  color: #000;
+  font-weight: bold;
+}
+.filter>.itemType>dd:nth-child(3){
+  color: #000;
+  font-weight: bold;
+}
+.filter>.priceFrom>dd{
+  color: #000;
+}
+
+/* 제품리스트 */
+.product{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product>figure{
+  width: 33.333%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid #666; */
+  text-align: center;
+  margin-bottom: 50px;
+}
+.product>figure>img{
+  margin-bottom: 10px;
+}
+.product>figure>figcaption{
+  text-align: center;
+}
+.product>figure>figcaption>dl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product>figure>figcaption>dl>dt{
+  color: rgb(0, 110, 255);
+  font-weight: bold;
+  line-height: 30px;
+}
+.product>figure>figcaption>dl>dd{
+  margin-bottom: 10px;
+}
+.product>figure>figcaption>dl>dd>dl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.product>figure>figcaption>dl>dd>dl>dd{
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+}
+.product>figure>p>button{
+  font-size: 18px;
+  border: none;
+  background-color: #fff;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* footer */
+
+#wrap>footer{
+  display: flex;
+  flex-direction: column;
+}
+
+footer>div{
+  background-color: #0c2645;
+}
+footer>div a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px 10px;
+}
+footer>div>ul{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer>div>ul>li{
+}
+
+footer>ul{
+  display: flex;
+  justify-content: center;
+}
+footer>ul a{
+  color: #000;
+  text-decoration: none;
+  padding: 0 10px;
+  display: block;
+  font-weight: bold;
+}
+footer>ul>li{
+  padding: 10px 0;
+}
+footer>ul>li:first-child>a{
+  border-right: 1px solid #666;
+}
+
+#wrap>footer>small{
+  text-align: center;
+  color: #999;
+}

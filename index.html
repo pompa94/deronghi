@@ -12,118 +12,496 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
+
 </head>
 <body>
     <div id="wrap">
-        <header>
-            <h1>
-                <a href="#">
-                    <img src="" alt="">
-                </a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="#">커피</a></li>
-                    <li><a href="#">주방가전</a></li>
-                    <li><a href="#">계절가전</a></li>
-                    <li><a href="#">고객지원</a></li>
-                    <li><a href="#">VIP클럽</a></li>
-                    <li><a href="#">새소식</a></li>
-                </ul>
-            </nav>
-            <div class="lang">
-                <p>
-                    <span>Korea(Republic of)대한민국</span>
-                </p>
-                <ul class="langM">
-                    <li>
-                        <span>KOR</span>
-                    </li>
-                    <li>
-                        <span>ENG</span>
-                    </li>
-                    <li>
-                        <span>JPN</span>
-                    </li>
-                    <li>
-                        <span>CHI</span>
-                    </li>
-                    <li>
-                        <span>GER</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="surch">
-                <input type="text" placeholder="검색">
-                <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            </div>
-        </header>
+
+        <div id="header">
+            <header>
+                <h1>
+                    <a href="#">
+                        <img src="./images/Logo1.png" alt="메인로고">
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <h2 class="hide">메이내비게이션</h2>
+                    <ul>
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">주방가전</a></li>
+                        <li><a href="#">계절가전</a></li>
+                        <li><a href="#">고객지원</a></li>
+                        <li><a href="#">VIP클럽</a></li>
+                        <li><a href="#">새소식</a></li>
+                    </ul>
+                </nav>
+                <div class="sub">
+                    <dl class="lang">
+                        <dt>
+                            <p>
+                                <i class="fa-solid fa-earth-asia"></i>
+                                <span>Korea(Republic of)대한민국</span>
+                            </p>
+                        </dt>
+                        <!-- <dd>
+                            <dl>
+                                <dd>
+                                    <span>KOR</span>
+                                </dd>
+                                <dd>
+                                    <span>ENG</span>
+                                </dd>
+                                <dd>
+                                    <span>JPN</span>
+                                </dd>
+                                <dd>
+                                    <span>GER</span>
+                                </dd>
+                            </dl>
+                        </dd> -->
+                    </dl>
+                    <div class="search">
+                        <input type="text" placeholder="검색">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </header>
+        </div>
 
         <!-- article -->
         <article id="main">
+
             <div id="box01">
                 <ul>
                     <li>홈</li>
+                    <li><i class="fa-solid fa-caret-right"></i></li>
                     <li>커피</li>
+                    <li><i class="fa-solid fa-caret-right"></i></li>
                     <li>커피머신</li>
                 </ul>
                 <h2>전자동 커피머신</h2>
             </div>
             
-            <div id="box02">
-                <dl>
-                    <dt>커피머신</dt>
-                    <dd>전자동 커피머신</dd>
-                    <dd>반자동 커피머신</dd>
-                </dl>
-                <dl>
-                    <dt>컬러</dt>
-                    <dd>블랙</dd>
-                    <dd>실버</dd>
-                    <dd>블랙&실버</dd>
-                </dl>
-                <dl>
-                    <dt>타입</dt>
-                    <dd>싱글 타입</dd>
-                    <dd>더블 타입</dd>
-                </dl>
-                <ul class="from">
-                    <li>
-                        <span>
-                            <label for="userMax">최고가격</label>
-                            <input id="userMax" readonly>
-                        </span>
-                    </li>
-                    <li>
-                        <input type="range" min="0" max="1500000">
-                    </li>
-                    <li>
-                        <span>선택상품 갯수 : </span>
-                    </li>
-                </ul>
-            </div>
+            <section id="box02">
+                <div class="filter">
+                    <dl class="itemWork">
+                        <dt>커피머신</dt>
+                        <dd>전자동 커피머신</dd>
+                        <dd>반자동 커피머신</dd>
+                    </dl>
+                    <dl class="itemColor">
+                        <dt>컬러</dt>
+                        <dd>블랙</dd>
+                        <dd>실버</dd>
+                        <dd>블랙&실버</dd>
+                    </dl>
+                    <dl class="itemType">
+                        <dt>타입</dt>
+                        <dd>싱글 타입</dd>
+                        <dd>더블 타입</dd>
+                    </dl>
+                    <dl class="priceFrom">
+                        <dt>가격</dt>
+                        <dd>
+                            <span>
+                                <label for="userMax">최고가격</label>
+                                <input id="userMax" readonly>
+                            </span>
+                        </dd>
+                        <dd>
+                            <input type="range" min="0" max="1500000">
+                        </dd>
+                        <dd>
+                            <span>선택상품 갯수 : </span>
+                        </dd>
+                    </dl>
+                </div>
 
-            <div id="box03">
-
-            </div>
+                <div class="product">
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dd>전자동 커피머신</dd>
+                                        <dd>실버</dd>
+                                        <dd>더블타입</dd>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                        <p>
+                            <button>상세보기</button>
+                        </p>
+                    </figure>
+                </div>
+            </section>
 
         </article>
 
         <footer>
-            <ul>
-                <li>
-                    <a href="#">커피</a>
-                </li>
-                <li>
-                    <a href="#">주방가전</a>
-                </li>
-                <li>
-                    <a href="#">계절가전</a>
-                </li>
-                <li>
-                    <a href="#">DE'LONGHI</a>
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">커피</a>
+                    </li>
+                    <li>
+                        <a href="#">주방가전</a>
+                    </li>
+                    <li>
+                        <a href="#">계절가전</a>
+                    </li>
+                    <li>
+                        <a href="#">DE'LONGHI</a>
+                    </li>
+                </ul>
+            </div>
+            
             <ul>
                 <li>
                     <a href="#">개인정보보호정책</a>
@@ -135,7 +513,9 @@
                     <a href="#">Cookie Preferences</a>
                 </li>
             </ul>
-            <small></small>
+            <small>
+                &copy;De'Longhi Appliancess S.r.l.  - Via L. Seitz, 47,31100 Treviso, Italy - All right reserved
+            </small>
         </footer>
     </div>
 </body>
