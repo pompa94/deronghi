@@ -74,6 +74,39 @@ header>.sub{
 header>.sub>.lang{
   color: #fff;
   font-size: 20px;
+  position: relative;
+}
+header>.sub>.lang>dd{
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 106px;
+  width: 100%;
+  border: 3px solid mediumaquamarine;
+  box-shadow: 0px 0px 7px 2px #000;
+}
+header>.sub>.lang>dd>p{
+  padding: 10px 0;
+  font-size: 40px;
+  border-bottom: 3px solid #000;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+header>.sub>.lang>dd>dl{
+  width: 100%;
+}
+header>.sub>.lang>dd>dl>dd{
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+header>.sub>.lang>dt:hover+dd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header>.sub>.search{}
 header>.sub>.search>input{
