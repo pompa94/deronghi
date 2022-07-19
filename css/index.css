@@ -48,6 +48,11 @@ header>nav{
   bottom: 0;
   left: 200px;
 }
+header>nav>p{
+  display: none;
+  color: #fff;
+  font-size: 20px;
+}
 header>nav>ul{
   display: flex;
   justify-content: space-between;
@@ -119,6 +124,7 @@ header>.sub>.search>input{
 header>.sub>.search>span{
   color: #fff;
   cursor: pointer;
+  font-size: 20px;
 }
 
 /* article */

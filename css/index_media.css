@@ -33,7 +33,38 @@
 /* @@@@@@@@@@@@     테블릿    @@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@     테블릿    @@@@@@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width:979px) and (min-width:580px){
-    
+  #header>header{
+    align-items: center;
+  }
+  header>nav{
+    position: unset;
+    text-align: end;
+  }
+  header>nav>p{
+    display: block;
+    font-size: 40px;
+  }
+  header>nav>ul{
+    display: none;
+  }
+
+  header>.sub{
+    flex-direction: row;
+  }
+
+  header>.sub>.lang>dt>p>i{
+    font-size: 40px;
+  }
+  header>.sub>.lang>dt>p>span{
+    display: none;
+  }
+
+  header>.sub>.search>input{
+    display: none;
+  }
+  header>.sub>.search>span{
+    font-size: 40px;
+  }
 }
 
 
