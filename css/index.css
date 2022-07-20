@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+
+/* 폰트 */
+/* font-family: 'Gothic A1', sans-serif; */
+
+
+
 .hide{
   width: 0; height: 0;
   font-size: 0;
@@ -60,6 +67,7 @@ header>nav>ul{
 header>nav>ul>li{
   padding: 10px 5px;
   font-size: 20px;
+  font-family: 'Gothic A1', sans-serif;
 }
 #header>header>nav>ul>li>a{
   display: block;
@@ -80,6 +88,7 @@ header>.sub>.lang{
   color: #fff;
   font-size: 20px;
   position: relative;
+  font-family: 'Gothic A1', sans-serif;
 }
 header>.sub>.lang>dd{
   display: none;
@@ -97,6 +106,7 @@ header>.sub>.lang>dd>p{
   width: 100%;
   text-align: center;
   color: #000;
+  font-family: 'Gothic A1', sans-serif;
 }
 header>.sub>.lang>dd>dl{
   width: 100%;
@@ -113,13 +123,16 @@ header>.sub>.lang>dt:hover+dd{
   flex-direction: column;
   align-items: center;
 }
-header>.sub>.search{}
+header>.sub>.search{
+  font-family: 'Gothic A1', sans-serif;
+}
 header>.sub>.search>input{
   width: 80%;
   font-size: 20px;
   margin-right: 5%;
   padding: 5px 0;
   text-indent: 10px;
+  
 }
 header>.sub>.search>span{
   color: #fff;
@@ -136,6 +149,7 @@ article{
   width: /* 1440px */90%;
   margin: 0 auto 80px;
   padding: 10px 0;
+  font-family: 'Gothic A1', sans-serif;
 }
 
 #box01>ul{
@@ -144,6 +158,7 @@ article{
 #box01>ul>li{
   padding: 5px 10px;
   color: rgb(0, 110, 255);
+  font-size: 18px;
 }
 #box01>ul>li:last-child{
   color: #000;
@@ -151,7 +166,7 @@ article{
 #box01>h2{
   text-align: center;
   padding: 20px 0;
-  font-size: 40px;
+  font-size: 45px;
   color: #000;
   font-weight: bold;
 }
@@ -161,6 +176,7 @@ article{
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  font-family: 'Gothic A1', sans-serif;
 }
 
 .filter{}
@@ -171,7 +187,7 @@ article{
 .filter>dl>dt{
   color: orangered;
   border-bottom: 1px solid orangered;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 30px;
   margin-bottom: 10px;
@@ -180,6 +196,11 @@ article{
 .filter>dl>dd{
   color: #999;
   line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.filter>dl>dd:hover{
+  border-bottom: 1px solid #000;
 }
 
 .filter>.itemWork>dd:nth-child(2){
@@ -196,6 +217,9 @@ article{
 }
 .filter>.priceFrom>dd{
   color: #000;
+}
+.filter>.priceFrom>dd:hover{
+  border: none;
 }
 
 /* 제품리스트 */

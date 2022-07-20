@@ -35,21 +35,52 @@
 @media screen and (max-width:979px) and (min-width:580px){
   #header>header{
     align-items: center;
+    position: unset;
+  }
+  header>h1{
+    /* width: 33.333%; */
   }
   header>nav{
+    width: 100%;
+    /* width: 33.33333%; */
     position: unset;
-    text-align: end;
   }
   header>nav>p{
+    position: absolute;
+    right: 0;
+    top: 30px;
     display: block;
     font-size: 40px;
   }
+  header>nav>p:hover+ul{
+    display: flex;
+  }
   header>nav>ul{
     display: none;
+    background-color: #0c2645;
+    position: absolute;
+    left: 0;
+    top: 104px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    border-top: 2px solid #fff;
+  }
+  header>nav>ul>li{
+    width: 100%;
+    text-align: center;
+  }
+  #header>header>nav>ul>li:hover{
+    background-color: rgba(255, 255, 255, 0.74);
   }
 
   header>.sub{
+    /* width: 33.3333%; */
     flex-direction: row;
+    /* justify-content: start; */
+  }
+  header>.sub>.lang{
   }
 
   header>.sub>.lang>dt>p>i{
