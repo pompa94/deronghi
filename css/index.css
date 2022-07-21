@@ -180,11 +180,14 @@ article{
 }
 
 .filter{}
+.filterClick{
+  display: none;
+}
 
-.filter>dl{
+.filter>div>dl{
   padding: 10px 0;
 }
-.filter>dl>dt{
+.filter>div>dl>dt{
   color: orangered;
   border-bottom: 1px solid orangered;
   font-size: 25px;
@@ -193,32 +196,32 @@ article{
   margin-bottom: 10px;
 }
 
-.filter>dl>dd{
+.filter>div>dl>dd{
   color: #999;
   line-height: 30px;
   font-size: 20px;
   cursor: pointer;
 }
-.filter>dl>dd:hover{
+.filter>div>dl>dd:hover{
   border-bottom: 1px solid #000;
 }
 
-.filter>.itemWork>dd:nth-child(2){
+.filter>div>.itemWork>dd:nth-child(2){
   color: #000;
   font-weight: bold;
 }
-.filter>.itemColor>dd:nth-child(4){
+.filter>div>.itemColor>dd:nth-child(4){
   color: #000;
   font-weight: bold;
 }
-.filter>.itemType>dd:nth-child(3){
+.filter>div>.itemType>dd:nth-child(3){
   color: #000;
   font-weight: bold;
 }
-.filter>.priceFrom>dd{
+.filter>div>.priceFrom>dd{
   color: #000;
 }
-.filter>.priceFrom>dd:hover{
+.filter>div>.priceFrom>dd:hover{
   border: none;
 }
 
