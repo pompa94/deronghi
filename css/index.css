@@ -91,7 +91,7 @@ header>.sub>.lang{
   font-family: 'Gothic A1', sans-serif;
 }
 header>.sub>.lang>dd{
-  display: none;
+  /* display: none; */
   background-color: #fff;
   position: absolute;
   top: 106px;

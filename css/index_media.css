@@ -81,15 +81,18 @@
 
   header>.sub{
     /* width: 33.3333%; */
-    flex-direction: row;
+    /* flex-direction: row; */
     /* justify-content: start; */
-    position: absolute;
-    right: 25vh;
+    /* position: absolute;
+    right: 25vh; */
   }
   header>.sub>.lang{
-    margin-right: 5vh;
+    position: unset;
   }
-
+  header>.sub>.lang>dt{
+    position: absolute;
+    right: 25vh; 
+  }
   header>.sub>.lang>dt>p>i{
     font-size: 40px;
   }
@@ -201,7 +204,7 @@
     flex-direction: row;
     /* justify-content: start; */
     position: absolute;
-    right: 25vh;
+    right: 22.5vh;
   }
   header>.sub>.lang{
     margin-right: 5vh;
@@ -225,4 +228,8 @@
   /* @@@@@@@@@메인@@@@@@@ */
   /* @@@@@@@@@메인@@@@@@@ */
   /* @@@@@@@@@메인@@@@@@@ */
+
+
+
+
 }
