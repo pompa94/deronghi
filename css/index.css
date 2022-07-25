@@ -46,7 +46,7 @@ html{
   position: relative;
 }
 header>h1{
-  width: 150px;
+  width: /* 150px */10.41666666666%;
 }
 
 header>nav{
@@ -91,7 +91,7 @@ header>.sub>.lang{
   font-family: 'Gothic A1', sans-serif;
 }
 header>.sub>.lang>dd{
-  /* display: none; */
+  display: none;
   background-color: #fff;
   position: absolute;
   top: 106px;
@@ -132,7 +132,6 @@ header>.sub>.search>input{
   margin-right: 5%;
   padding: 5px 0;
   text-indent: 10px;
-  
 }
 header>.sub>.search>span{
   color: #fff;
@@ -206,15 +205,15 @@ article{
   border-bottom: 1px solid #000;
 }
 
-.filter>div>.itemWork>dd:nth-child(2){
+.filter>div>.itemWork>dd:hover{
   color: #000;
   font-weight: bold;
 }
-.filter>div>.itemColor>dd:nth-child(4){
+.filter>div>.itemColor>dd:hover{
   color: #000;
   font-weight: bold;
 }
-.filter>div>.itemType>dd:nth-child(3){
+.filter>div>.itemType>dd:hover{
   color: #000;
   font-weight: bold;
 }
@@ -224,6 +223,15 @@ article{
 .filter>div>.priceFrom>dd:hover{
   border: none;
 }
+
+.filter>div>.priceFrom>dd input{
+  width: 100%;
+}
+.filter>div>.priceFrom>dd:nth-child(2) input{
+  border: none;
+  font-size: 20px;
+}
+
 
 /* 제품리스트 */
 .product{
@@ -279,6 +287,58 @@ article{
 }
 
 
+/* 모달 */
+
+div#modal{
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border: 3px solid #0c2645;
+}
+div#modal>p{
+  text-align: end;
+  font-size: 30px;
+  color: #fff;
+}
+div#modal>p>i{
+  padding: 10px 20px;
+  background-color: #0c2645;
+}
+div#modal>figure{
+  display: flex;
+}
+div#modal>figure>img{
+  width: 50%;
+  height: 100%;
+}
+div#modal>figure>figcaption{
+  width: 50%;
+  color: #000;
+}
+div#modal>figure>figcaption>dl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#modal>figure>figcaption>dl>dt{
+  margin-bottom: 20px;
+}
+div#modal>figure>figcaption>dl>dd>dl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#modal>figure>figcaption>dl>dd>dl>dd{
+  margin-bottom: 20px;
+}
+div#modal>figure>figcaption>dl>dd>dl>dt{
+  margin-bottom: 10px;
+}
+
 /* footer */
 
 #wrap>footer{
@@ -317,6 +377,7 @@ footer>ul a{
 }
 footer>ul>li{
   padding: 10px 0;
+  font-family: 'Gothic A1', sans-serif;
 }
 footer>ul>li:first-child>a{
   border-right: 1px solid #666;

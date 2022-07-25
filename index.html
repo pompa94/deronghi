@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./css/index_media.css">
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <!-- Vue -->
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="./js/index.js"></script>
 
 </head>
 <body>
@@ -114,31 +117,36 @@
                             <dd>
                                 <span>
                                     <label for="userMax">최고가격</label>
-                                    <input id="userMax" readonly>
+                                    <input id="userMax" readonly
+                                    v-model="max">
                                 </span>
                             </dd>
                             <dd>
-                                <input type="range" min="0" max="1500000">
+                                <input type="range" min="500000" max="1200000" v-model="max" >
                             </dd>
                             <dd>
-                                <span>선택상품 갯수 : </span>
+                                <span>선택상품 갯수 :{{filteredProducts.length}} </span>
                             </dd>
                         </dl>
                     </div>
                 </div>
 
                 <div class="product">
-                    <figure>
-                        <img src="./images/pic1.jpg" alt="제품01">
+                    <figure v-for="(item,index) in filteredProducts" :key="index">
+                        <img :src="item.image" :alt="item.name">
                         <figcaption>
                             <dl>
-                                <dt>COFFEE_01</dt>
+                                <dt><!-- COFFEE_01 -->
+                                {{item.name}}</dt>
                                 <dd>
                                     <dl>
-                                        <dd>전자동 커피머신</dd>
-                                        <dd>실버</dd>
-                                        <dd>더블타입</dd>
-                                        <dd>750,000원</dd>
+                                        <dd><!-- 전자동 커피머신 -->{{item.work}}</dd>
+                                        <dd><!-- 실버 -->
+                                        {{item.color}}</dd>
+                                        <dd><!-- 더블타입 -->
+                                        {{item.type}}</dd>
+                                        <dd><!-- 750,000원 -->
+                                        {{won(item.price)}}원</dd>
                                     </dl>
                                 </dd>
                             </dl>
@@ -146,7 +154,7 @@
                         <p>
                             <button>상세보기</button>
                         </p>
-                    </figure>
+                    <!-- </figure>
                     <figure>
                         <img src="./images/pic2.jpg" alt="제품01">
                         <figcaption>
@@ -659,6 +667,41 @@
                         <p>
                             <button>상세보기</button>
                         </p>
+                    </figure> -->
+                </div>
+
+                <div id="modal">
+                    <p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </p>
+                    <figure>
+                        <img src="./images/pic1.jpg" alt="제품01">
+                        <figcaption>
+                            <dl>
+                                <dt>COFFEE_01</dt>
+                                <dd>
+                                    <dl>
+                                        <dt>work</dt>
+                                        <dd>auto</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>color</dt>
+                                        <dd>silver</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>type</dt>
+                                        <dd>auto</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>price</dt>
+                                        <dd>750,000원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>"원터치로 커피 음료와 2잔의 에스프레소를 동시에 즐길 수 있습니다.","수동 조절식 우유 거품기를 사용하여 크리미한 밀크 거품을 만들수 있습니다.","사용자 편의에 맞춰 아로마와 양을 조절할 수 있습니다."</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </figcaption>
                     </figure>
                 </div>
             </section>
